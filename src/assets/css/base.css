@@ -1,0 +1,203 @@
+html {
+  font-size: 100px;
+  padding: 0;
+  margin: 0;
+}
+body,
+div,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+img {
+  display: block;
+  margin: 0;
+}
+input,
+button {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  border: none;
+}
+.pageGlobal {
+  background: #fff;
+}
+.formGlobal {
+  background: #fff;
+}
+.iptBox .label {
+  float: left;
+  height: 0.6rem;
+  line-height: 0.6rem;
+  text-align: left;
+}
+.iptBox .cont {
+  width: 100%;
+  padding-left: 10px;
+}
+.formGlobal [class^=iptBox] {
+  margin: 0 0.2rem;
+}
+.formGlobal [class^=iptBox] .label {
+  width: 1.2rem;
+  height: 0.8rem;
+  line-height: 0.8rem;
+  flex-shrink: 0;
+}
+.formGlobal [class^=iptBox] .cont {
+  height: 0.4rem;
+  line-height: 0.4rem;
+  margin: 0.2rem 0;
+  border: none;
+  outline: none;
+}
+.formGlobal [class^=iptBox] .btnBox {
+  height: 0.8rem;
+  line-height: 0.8rem;
+}
+.formGlobal [class^=iptBox] .btnBox button {
+  height: 0.5rem;
+  border-radius: 0.25rem;
+}
+.formGlobal [class^=iptBox] .label,
+.formGlobal [class^=iptBox] .cont,
+.formGlobal [class^=iptBox] button {
+  font-size: 0.26rem;
+}
+.formGlobal [class^=iptBox] ::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #999;
+  font-size: 0.26rem;
+}
+.formGlobal [class^=iptBox] :-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #999;
+  font-size: 0.26rem;
+}
+.formGlobal [class^=iptBox] ::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #999;
+  font-size: 0.26rem;
+}
+.formGlobal [class^=iptBox] :-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: #999;
+  font-size: 0.26rem;
+}
+.formGlobal .iptBox_select {
+  background-size: auto 30%;
+}
+.formGlobal .iptBox_select .my-content-list {
+  width: 100%;
+}
+.formGlobal .iptBox_select .my-content-list input {
+  padding-left: 10px;
+}
+.formGlobal .iptBox_select,
+.formGlobal .iptBox {
+  display: flex;
+}
+.formGlobal .iptBox_tips {
+  text-align: left;
+  color: #c2726b;
+  margin-top: 0.6rem;
+  font-size: 0.26rem;
+}
+.formGlobal .grayLine {
+  background: #fafafa;
+  height: 0.41rem;
+  margin-top: -1px;
+  position: relative;
+  line-height: 0.41rem;
+  padding: 0 0.2rem;
+  color: #be3932;
+  text-align: right;
+}
+.mint-popup.mint-popup-bottom {
+  font-size: 0.28rem;
+  width: 100%;
+}
+.mint-popup.mint-popup-bottom .picker {
+  width: 100%;
+}
+.mint-popup.mint-popup-bottom .picker .picker-toolbar {
+  line-height: 40px;
+  padding: 0 0.2rem;
+}
+.my-content-list {
+  font-size: 0.18rem;
+  float: right;
+}
+.my-content-list input {
+  float: right;
+  height: 0.6rem;
+  line-height: 0.6rem;
+  font-size: 0.16rem;
+  text-align: right;
+}
+.my-content-list ::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #c2726b;
+  font-size: 0.26rem;
+}
+.my-content-list :-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #c2726b;
+  font-size: 0.26rem;
+}
+.my-content-list ::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #c2726b;
+  font-size: 0.26rem;
+}
+.my-content-list :-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: #c2726b;
+  font-size: 0.26rem;
+}
+.picker-toolbar-title .usi-btn-cancel {
+  float: left;
+}
+.picker-toolbar-title .usi-btn-sure {
+  float: right;
+}
+.AppointTitleBox {
+  width: 100%;
+  height: .8rem;
+  line-height: .8rem;
+  text-align: left;
+  padding: 0 .2rem;
+  margin-top: .1rem;
+}
+.AppointTitleBox .title {
+  font-size: .3rem;
+  padding-left: .2rem;
+  display: inline;
+  border-left: .06rem solid #be3932;
+}
+.AppointTitleBox .titIcon {
+  width: .11rem;
+  height: .2rem;
+  margin-left: .18rem;
+  display: inline-block;
+}
+.AppointTitleBox .titIcon > img {
+  width: 100%;
+  height: 100%;
+}
+@supports (bottom: env(safe-area-inset-bottom)) {
+  div.footer {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+  body #app {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+}

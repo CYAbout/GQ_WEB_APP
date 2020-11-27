@@ -57,7 +57,7 @@ module.exports = {
         //     changeOrigin: true
         //   },
           '/': {
-            target: 'http://111.200.239.209:19080',
+            target: 'http://127.0.0.1:3000',
             changeOrigin: true,
             ws:false, //值为false防止控制台报错
           },

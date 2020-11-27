@@ -173,7 +173,41 @@ export default {
     },
     //跳转页面
     query(url) {
-      this.$router.push({path:url})
+      if (url === '/Demo') {
+        let _url = '/api1'
+        let _param = {
+          flag: 1,
+          type: 'get1',
+        }
+        RequestGet(_url,_param).then((res) => {
+            console.log('======get api1:',res)
+        }, (err) => {
+        console.log('err:',err)
+        }).catch((err) => {
+        console.log('catch err:>', err)
+        })
+
+
+
+        let l_url = '/api3'
+            let l_params = {
+              flag: 2,
+              type: 'post2',
+            }
+            RequestAxios.post(l_url,l_params).then((res) => {
+                console.log('======post api3:',res)
+            }, (err) => {
+                console.log('err:',err)
+            })
+
+
+
+
+
+      } else {
+        this.$router.push({path:url})
+      }
+      
     },
     huangouFun () { // 换购跳转 
       window.location.href = 'https://mall.gac-toyota.com.cn/Mobile/activity/activityMobile?ID=a4205ece-8c0f-4983-84cd-a91100ef72ca'
@@ -268,11 +302,8 @@ export default {
       Toast('敬请期待！')
     },
     getWXShare() {
-      let _url = '/sign/getSign'
-      let _param = {
-        url: 'https://gtmc201906.cheyinnet.com/dist/index.html#/'
-        // url: window.location.href
-      }
+      let _url = '/api1'
+      let _param = null
       RequestGet(_url,_param).then((res) => {
           console.log('getWXShare:',res)
           this.GoWXapi(res.content)
